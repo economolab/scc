@@ -7,4 +7,7 @@
 * [Cheat-Sheet](http://scv.bu.edu/documents/SCC_CheatSheet.pdf)
 
 ## If you want to use the SCC in your browser:
-* * [On Demand Dashboard](https://scc-ondemand2.bu.edu/pun/sys/dashboard)
+* [On Demand Dashboard](https://scc-ondemand2.bu.edu/pun/sys/dashboard)
+
+## Examples of submitting jobs to SCC (with Pytorch):
+* [examples](examples/)

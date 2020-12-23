@@ -1,0 +1,23 @@
+#!/bin/bash -l
+
+# Request 4 CPU cores. This will set NSLOTS=4
+#$ -pe omp 4
+
+# Request 1 GPU
+#$ -l gpus=1
+
+# Request at least compute capability 3.5
+#$ -l gpu_c=3.5
+
+# Give the job a name
+#$ -N test_tensorflow
+
+# Combine output and error stream
+#$ -j y
+
+# load modules
+module load python3/3.7.7
+module load tensorflow/2.1.0
+
+# Run the test script
+python py_tf.py

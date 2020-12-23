@@ -1,0 +1,22 @@
+#!/bin/bash -l
+
+# Submit job with the command: qsub job.qsub
+
+# Set the runtime limit (default 12 hours):
+#$ -l h_rt=12:00:00
+
+# Send email when the job is done (default: no email is sent)
+#$ -m e
+
+# Give the job a name (default: script name)
+#$ -N py_test
+
+# Combine output and error streams
+#$-j y
+
+# Load the desired version of Python.
+module load python3/3.7.7
+
+# Run the Python script.
+python py_example.py
+
